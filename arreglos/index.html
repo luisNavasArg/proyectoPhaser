@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		/* declaracion de un arreglo  */
+		let arreglo = [];
+		//asignamos un valor en posicion 0
+		arreglo[0]="Laura";
+		arreglo.push("Juan");
+		//cambiamos un valor
+		arreglo[0]="Pedro";
+		let estudiantes = [];
+
+		// estudiantes.push("Alejandro");
+		// estudiantes.push("Luis");
+		// estudiantes.push("Laura");
+		// estudiantes.push("Juan");
+		// estudiantes.push("Maria");
+		// estudiantes.push("Guillermo");
+		// estudiantes.push("Carlos");
+		// estudiantes.push("Matías");
+
+		let nombre = prompt('escribe un nombre', '');
+		
+		function inicio(){
+			
+			estudiantes.push(nombre);
+			
+		}
+		while (nombre != "0") {
+			nombre = prompt('escribe un nombre', '');
+			inicio(nombre);
+		}
+
+
+	</script>
+</body>
+</html>
