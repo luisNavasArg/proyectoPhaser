@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	    const hablar = (text) => { //Usar en firefox, ya que quedó en desuso en la version 70 de chrome
+        this.text = text;
+        speechSynthesis.speak(new SpeechSynthesisUtterance(this.text));
+        // let u = new SpeechSynthesisUtterance();
+        // u.text = text;
+        // u.lang = 'es';
+        // u.name = "spanish";
+        // u.rate = 1;
+        // u.onend = function(event) {
+
+        // }
+        // speechSynthesis.speak(u);
+
+    }
+
+    hablar("Creá la función “Saltar”. 	");
+</script>
+</body>
+</html>
